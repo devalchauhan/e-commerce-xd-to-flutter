@@ -1,4 +1,5 @@
 import 'package:ecommerce/constants/strings.dart';
+import 'package:ecommerce/presentation/widgets/iPhoneXXS11Pro17.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/gradient_xd_transform.dart';
@@ -119,25 +120,30 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Pinned.fromPins(
-            Pin(size: 209.0, start: 18.0),
-            Pin(size: 340.0, middle: 0.3919),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.0),
-                gradient: LinearGradient(
-                  begin: Alignment(0.93, -0.94),
-                  end: Alignment(-0.5, 0.5),
-                  colors: [const Color(0xff9cacb8), const Color(0xffbacad6)],
-                  stops: [0.0, 1.0],
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x287f4a83),
-                    offset: Offset(0, 0),
-                    blurRadius: 10,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed(PRO17_PAGE);
+            },
+            child: Pinned.fromPins(
+              Pin(size: 209.0, start: 18.0),
+              Pin(size: 340.0, middle: 0.3919),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  gradient: LinearGradient(
+                    begin: Alignment(0.93, -0.94),
+                    end: Alignment(-0.5, 0.5),
+                    colors: [const Color(0xff9cacb8), const Color(0xffbacad6)],
+                    stops: [0.0, 1.0],
                   ),
-                ],
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x287f4a83),
+                      offset: Offset(0, 0),
+                      blurRadius: 10,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -244,7 +250,7 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
             Pin(size: 222.0, middle: 0.4542),
             child: Stack(
               children: <Widget>[
-                Pinned.fromPins(
+                /*Pinned.fromPins(
                   Pin(start: 5.0, end: 0.0),
                   Pin(size: 79.0, end: 0.0),
                   child: Stack(
@@ -290,11 +296,8 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).pushNamed(PRO17_PAGE);
-                  },
+                ),*/
+                IgnorePointer(
                   child: Pinned.fromPins(
                     Pin(size: 149.0, start: 0.0),
                     Pin(start: 0.0, end: 31.0),
@@ -303,7 +306,7 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                         Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: const AssetImage(''),
+                          image: const AssetImage('assets/images/redchair.png'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -396,28 +399,33 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
             Pin(size: 309.0, middle: 0.3678),
             child: Stack(
               children: <Widget>[
-                Pinned.fromPins(
-                  Pin(size: 175.0, start: 12.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15.0),
-                      gradient: LinearGradient(
-                        begin: Alignment(0.84, -0.88),
-                        end: Alignment(-0.9, 0.79),
-                        colors: [
-                          const Color(0xff736565),
-                          const Color(0xffac9696)
-                        ],
-                        stops: [0.0, 1.0],
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x287f4a83),
-                          offset: Offset(0, 0),
-                          blurRadius: 10,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(PRO17_PAGE);
+                  },
+                  child: Pinned.fromPins(
+                    Pin(size: 175.0, start: 12.0),
+                    Pin(start: 0.0, end: 0.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        gradient: LinearGradient(
+                          begin: Alignment(0.84, -0.88),
+                          end: Alignment(-0.9, 0.79),
+                          colors: [
+                            const Color(0xff736565),
+                            const Color(0xffac9696)
+                          ],
+                          stops: [0.0, 1.0],
                         ),
-                      ],
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x287f4a83),
+                            offset: Offset(0, 0),
+                            blurRadius: 10,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -431,7 +439,7 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                         Pin(size: 79.0, end: 7.0),
                         child: Stack(
                           children: <Widget>[
-                            Pinned.fromPins(
+                            /*Pinned.fromPins(
                               Pin(start: -14.0, end: -68.0),
                               Pin(size: 27.0, middle: 0.5962),
                               child: Container(
@@ -475,11 +483,11 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                            ),
+                            ),*/
                           ],
                         ),
                       ),
-                      Pinned.fromPins(
+                      /*Pinned.fromPins(
                         Pin(start: 34.0, end: 16.0),
                         Pin(size: 79.0, end: 21.0),
                         child: Stack(
@@ -531,7 +539,7 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                             ),
                           ],
                         ),
-                      ),
+                      ),*/
                       Pinned.fromPins(
                         Pin(size: 179.0, end: 0.0),
                         Pin(size: 79.0, end: 0.0),
@@ -565,7 +573,7 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Pinned.fromPins(
+                            /*Pinned.fromPins(
                               Pin(start: 0.0, end: 0.0),
                               Pin(start: 0.0, end: 0.0),
                               child: Container(
@@ -581,20 +589,22 @@ class iPhoneXXS11Pro16 extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                            ),
+                            ),*/
                           ],
                         ),
                       ),
-                      Pinned.fromPins(
-                        Pin(start: 19.0, end: 9.0),
-                        Pin(start: 0.0, end: 15.0),
-                        child:
-                            // Adobe XD layer: 'pngwing.com' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: const AssetImage(''),
-                              fit: BoxFit.fill,
+                      IgnorePointer(
+                        child: Pinned.fromPins(
+                          Pin(start: 19.0, end: 9.0),
+                          Pin(start: 0.0, end: 15.0),
+                          child:
+                              // Adobe XD layer: 'pngwing.com' (shape)
+                              Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: const AssetImage(''),
+                                fit: BoxFit.fill,
+                              ),
                             ),
                           ),
                         ),

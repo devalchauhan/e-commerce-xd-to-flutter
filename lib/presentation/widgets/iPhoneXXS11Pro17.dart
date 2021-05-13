@@ -152,18 +152,13 @@ class iPhoneXXS11Pro17 extends StatelessWidget {
               ),
             ),
           ),
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).pop();
-            },
-            child: Pinned.fromPins(
-              Pin(size: 18.2, end: 18.0),
-              Pin(size: 16.0, start: 28.3),
-              child: SvgPicture.string(
-                _svg_at61tf,
-                allowDrawingOutsideViewBox: true,
-                fit: BoxFit.fill,
-              ),
+          Pinned.fromPins(
+            Pin(size: 18.2, end: 18.0),
+            Pin(size: 16.0, start: 28.3),
+            child: SvgPicture.string(
+              _svg_at61tf,
+              allowDrawingOutsideViewBox: true,
+              fit: BoxFit.fill,
             ),
           ),
           Pinned.fromPins(
@@ -599,30 +594,30 @@ class iPhoneXXS11Pro17 extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 225.0, middle: 0.5),
             Pin(size: 45.0, end: 25.0),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(23.0),
-                      color: const Color(0xffffffff),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x29aeaeae),
-                          offset: Offset(0, 0),
-                          blurRadius: 6,
-                        ),
-                      ],
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed(PRO18_PAGE);
+              },
+              child: Stack(
+                children: <Widget>[
+                  Pinned.fromPins(
+                    Pin(start: 0.0, end: 0.0),
+                    Pin(start: 0.0, end: 0.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(23.0),
+                        color: const Color(0xffffffff),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x29aeaeae),
+                            offset: Offset(0, 0),
+                            blurRadius: 6,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).pushNamed(PRO18_PAGE);
-                  },
-                  child: Pinned.fromPins(
+                  Pinned.fromPins(
                     Pin(size: 85.0, middle: 0.4992),
                     Pin(size: 20.0, middle: 0.52),
                     child: Text(
@@ -636,8 +631,8 @@ class iPhoneXXS11Pro17 extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Pinned.fromPins(
@@ -693,9 +688,11 @@ class iPhoneXXS11Pro17 extends StatelessWidget {
                   Pin(start: 0.0, end: 0.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: const Color(0xffffffff),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff707070)),
+                      image: DecorationImage(
+                        image:
+                            const AssetImage('assets/images/yellowchair.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),

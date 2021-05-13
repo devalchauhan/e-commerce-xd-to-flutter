@@ -13,21 +13,16 @@ class iPhoneXXS11Pro18 extends StatelessWidget {
       backgroundColor: const Color(0xff9cacb8),
       body: Stack(
         children: <Widget>[
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).pop();
-            },
-            child: Pinned.fromPins(
-              Pin(start: 0.0, end: 0.0),
-              Pin(start: 0.0, end: 0.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment(0.0, -1.0),
-                    end: Alignment(0.0, 1.0),
-                    colors: [const Color(0xff9cacb8), const Color(0xffbacad6)],
-                    stops: [0.0, 1.0],
-                  ),
+          Pinned.fromPins(
+            Pin(start: 0.0, end: 0.0),
+            Pin(start: 0.0, end: 0.0),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment(0.0, -1.0),
+                  end: Alignment(0.0, 1.0),
+                  colors: [const Color(0xff9cacb8), const Color(0xffbacad6)],
+                  stops: [0.0, 1.0],
                 ),
               ),
             ),
@@ -86,7 +81,11 @@ class iPhoneXXS11Pro18 extends StatelessWidget {
                   Pin(start: 0.0, end: 0.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: const Color(0xffffffff),
+                      image: DecorationImage(
+                        image: const AssetImage(
+                            'assets/images/yellowchairbig.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),
